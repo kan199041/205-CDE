@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Healthy Life</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+		<header>
+			<nav>
+				<h1>Welcome to Healthy Life</h1>
+				<ul>
+					<li class="dropdown">
+						<li><b><a href="Home.html">Home</a></li>
+						<li><b><a href="howto.html">How to do?</a></li>
+						<li><a href="Contact Us.html">Contact Us</a></li>				
+					<div id="headerLoginform">
+					<form method="post">
+						<input type="text" name="username" placeholder="Username">
+						<input type="password" name="password" placeholder="Password">
+						<input type="button" value="Login">
+						<a href="signup.html"><input type="button" value="Sign Up"></a>
+					</form>
+					</li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+	<body><br>
+	<div class="text-center">
+		<h1>How to be heathy?</h1>
+	</div>
+		
+	</div>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <h2>Eat healthy.</h2><br>
+	      <img src="https://arabicrawfood.files.wordpress.com/2015/05/rawfoodpyramid.png?w=256&h=256&crop=1"><br>
+	      <p>What you eat is closely linked to your health. Balanced nutrition has many benefits. By making healthier food choices, you can prevent or treat some conditions. These include heart disease, stroke, and diabetes. A healthy diet can help you lose weight and lower your cholesterol, as well.</p><br>
+	    </div>
+	    <div class="col-sm-4">
+	      <h2>Get regular exercise.</h2><br>
+	      <img src="https://images.vexels.com/media/users/3/132742/isolated/lists/c36507b1750900ccc97aecb4beedcebc-woman-on-tradmill-icon.png"><br>
+	      <p>Exercise can help prevent heart disease, stroke, diabetes, and colon cancer. It can help treat depression, osteoporosis, and high blood pressure. People who exercise also get injured less often. Routine exercise can make you feel better and keep your weight under control. Try to be active for 30 to 60 minutes about 5 times a week. Remember, any amount of exercise is better than none.</p><br>
+	    </div>
+	    <div class="col-sm-4">
+	      <h2>Lose weight if you are overweight.</h2><br>
+	      <img src="https://static.wixstatic.com/media/37cd91_5ec07afa86fe4f3685117ffe041f1eb4.jpg_256"><br>
+	      <p>Many Americans are overweight. Carrying too much weight increases your risk for several health conditions. These include:</p>
+	      <p>High blood pressure, high cholesterol,type 2 diabetes, heart disease, stroke, some cancers, gallbladder disease.</p><br>
+	    </div>
+	  </div>
+	</div>
+	<br>
+	<div class="break">	
+	</div>
+	
+	</body>
+	<footer>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-snapchat-ghost"></a><br>
+		<script type="text/javascript">
+        document.write (Date());
+        </script></time>
+	</footer>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+}
+
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    for (i = 0; i < slides.length; i++) {
+	        slides[i].style.display = "none"; 
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1} 
+	    slides[slideIndex-1].style.display = "block"; 
+	    setTimeout(showSlides, 5000); 
+	}
+	</script>
+</html>
